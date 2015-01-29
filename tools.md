@@ -96,3 +96,11 @@ Git:
 * git add - 
 * git push - 
 * git diff -
+
+Encryption:
+-----------
+
+### `gpg` – encryption and signing tool
+
+Program that uses the GnuPG. With gpg one can generate keys, encrypt files with said keys, 
+sign other peoples keys
