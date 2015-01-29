@@ -43,6 +43,12 @@ code on the command line using curly brackets, like so:
 This piece of code tokenizes strings separated by commas and prints out the
 second column if the first one is greater that 0.
 
+### `python` - a scripting language with high readability.
+
+Has many powerful modules including a CSV module for working with
+Comma Separated Value format. Use csv.reader(csvfile, dialect='excel',
+ **fmtparams) to read a CSV file line by line. 
+
 Tools for C Programmers
 -----------------------
 
