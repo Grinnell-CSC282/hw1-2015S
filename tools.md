@@ -20,6 +20,9 @@ single-character changes or deletions (for every character in a set).
 
 * `sed` 's/regex/replacement/g' infile > outfile` - replace all instances of
   matching regex with replacement, read from infile and written to outfile
+
+### `aspell`  
+a utility program that connects to the Aspell library so that it can function as an ispell -a replacement, as  an  independent  spellchecker,  as a test utility to test out Aspell library features, and asa utility for managing dictionaries used by the library.
  
 Scripting Languages
 -------------------
