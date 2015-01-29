@@ -1,0 +1,54 @@
+Converting DOS to Unix
+
+To convert from DOS to unix:
+
+	perl -p -e 's/\r$//' < dosFile > unixFile
+
+	Where dosFile is the dos file you want to convert and unixFile is the 		unixFile you want to produce.
+
+	// For testing purposes
+	// to convert from unix dos
+	//   perl -p -e 's/\n/\r\n/' < unixFile > dosFile
+
+	Solution found here: https://kb.iu.edu/d/acux
+
+To convert all uppercase letters to lower case letters use:
+
+	perl -pe 'y/[a-z][A-Z]/[A-Z][a-z]/' <lowerCaseFile> upperCaseFile
+
+	Solution found here: http://unix.stackexchange.com/questions/136118/		convert-all-text-from-uppercase-to-lowercase-and-vice-versa
+
+To delete trailing white space:
+
+	sed 's/^ *//;s/ *$//;s/  */ /;' <trailingFile> noTrailingFile
+
+	Solution found here: http://www.theunixschool.com/2012/12/howto-remove-		leading-trailing-spaces.html
+
+To make a list of all misspelled words in a text file:
+
+	spell someFile > fileOfAllTheMispelledWords
+
+	Solution found here: http://www.linfo.org/spell.html
+
+To parse a csv:
+	
+	cat inputFile | while read a b c d; do if [ d -gt $max1 ] then max=$line 	else continue fi echo $max > max_number done; done
+
+	Did not actually work but I think it is getting there… Need more ifs.
+
+	Solution found here: http://stackoverflow.com/questions/4439536/shell-		script-to-parse-through-a-file-csv-and-process-line-by-line
+
+
+To grab img urls from a page:
+
+	wget -O - http://google.com | grep -o '<img .*src=.*>' | sed -e 's/		<img /\n<img /g' | sed -e 's/<img .*src=['"'"'"]//' -e 's/["'"'"'].*$//' 	-e '/^$/ d'
+
+	Solution found here: http://stackoverflow.com/questions/1881237/easiest-	way-to-extract-the-urls-from-an-html-page-using-sed-or-awk-only
+	Specifically the comment made by user “Crisboot” on Aug 6 ’12
+
+
+
+
+
+
+

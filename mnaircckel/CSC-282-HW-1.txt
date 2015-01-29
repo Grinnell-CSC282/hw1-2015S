@@ -1,0 +1,30 @@
+﻿Marcel Champagne
+
+
+Given a standard text file, convert all uppercase letters to lowercase.
+Source: 
+http://www.digitalinternals.com/script/shell-script-convert-uppercase-lowercase/414/
+
+
+tr '[:upper:]' '[:lower:]' < inputfile > outputfile
+
+
+Given a DOS-formatted text file (lines end with \r\n rather than just \n), convert it to a standard text file.
+
+
+tr ' \r\n' '\n' < inputfile > outputfile
+
+
+Given a standard text file, remove all blank spaces at the end of lines.
+Source: http://www.unix.com/shell-programming-and-scripting/23602-how-remove-plank-spaces-end-lines.html
+
+
+sed -e 's/ *$//g' inputfile > outputfile
+
+
+Make a list of all misspelled words in a text file.
+source:
+http://www.thecaffrey.com/rha/172.19.52.14/rha/student/rha030-6.1/rha030_string_aspell.html
+
+
+aspell list < filetocheck > misspelledwords

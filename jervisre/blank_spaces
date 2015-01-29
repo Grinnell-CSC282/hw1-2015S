@@ -1,0 +1,7 @@
+//Given a standard text file, remove all blank spaces at the end of lines.
+// -i in-place edits the file
+
+sed -i 's/ *$//' file
+
+//or using space character?
+sed -i 's/\s*$//' file

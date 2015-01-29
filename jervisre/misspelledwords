@@ -1,0 +1,4 @@
+//Make a list of all misspelled words in a text file
+// aspell is a spelling checker and the list command gives a list of misspelled words to stdout
+
+words.txt > aspell list > misspelled.txt

@@ -1,0 +1,49 @@
+Uzodinma Nwike
+CSC 282
+Homework 1
+Due 01/29/2014
+
+1.	Given a DOS-formatted text file (lines end with \r\n rather than just \n), convert it to a standard text file.
+    
+    Solution: sed 's/.$//'
+    
+    Source: http://sed.sourceforge.net/sed1line.txt
+
+2.	Given a standard text file, convert all uppercase letters to lowercase.
+    
+    Solution: $ dd if=input.txt of=output.txt conv=lcase
+    
+    Source: http://linuxcommando.blogspot.com/2008/05/how-to-convert-text-files-to-all-upper.html
+
+3.	Given a standard text file, remove all blank spaces at the end of lines.
+    
+    Solution: sed 's/[ \t]*$//'
+    
+    Source: http://sed.sourceforge.net/sed1line.txt
+
+4.	Make a list of all misspelled words in a text file.
+    
+    Solution: % spell myfile
+    
+    Source: http://cs.canisius.edu/ONLINESTUFF/UNIX/files2.html 
+
+5.	Given a CSV file in which each line has the form: LastName,FirstName,Assignment,NumericGrade, find the five
+    highest grades on homework 2.
+
+    Solution: I found out about something called grep while looking for a solution to this problem on here
+    http://stackoverflow.com/questions/16956810/finding-all-files-containing-a-text-string-on-linux
+    I then proceeded to find out more about it. Turns out grep is a command-line utility that matches text in a file
+    by searching the lines in the file (http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html). I do not fully
+    understand its purpose though. I think if we can identify the lines with homework 2 as the assignment name, we
+    could find a way to sort this lines according to the numeric grade, then look at the value of the five highest
+    numeric grades.
+
+6.	Given an HTML file, find the URLs of all images. In case you don't know HTML, those will typically look like 
+    <img ... src="*URL*" ...> 
+    The img can have any capitalization (img, IMG, Img, iMg, etc.)
+    There can be other text between the img and the src. (That text cannot include a greater than sign.)
+    You may find it easier to start this problem by assuming that there's only one image tag on a line.
+
+    Solution: wget -prA.png
+
+    Source: http://unix.stackexchange.com/questions/89382/get-all-images-from-website
