@@ -1,0 +1,3 @@
+// Objective: Given a standard text file, convert all uppercase letters to lowercase.
+
+tr '[:upper:]' '[:lower:]' > lc_file
