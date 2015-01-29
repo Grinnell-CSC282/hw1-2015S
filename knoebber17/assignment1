@@ -1,0 +1,14 @@
+1.) dos2unix exampletext
+2.) cat uppercase | tr [:upper:] [:lower:] > lowercase
+
+QUESTION: how come this:
+cat uppercase | tr [:upper:] [:lower:] > uppercase
+results in uppercase being turned into a blank document          
+
+
+3.) cat input.txt | sed 's/[ \t]*$//' > output.txt
+from http://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
+
+4.) spell text > mispelled
+
+5.) I spent an hour for these solutions, and I don't really see any simple solutions for the rest. 

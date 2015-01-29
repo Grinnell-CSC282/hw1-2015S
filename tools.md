@@ -23,7 +23,12 @@ single-character changes or deletions (for every character in a set).
 
 ### `aspell`  
 a utility program that connects to the Aspell library so that it can function as an ispell -a replacement, as  an  independent  spellchecker,  as a test utility to test out Aspell library features, and asa utility for managing dictionaries used by the library.
- 
+
+### 'spell'
+A program that takes a textfile as input and gives mispelled words as output. 
+
+### 'dos2unix'
+A program that converts dos files to unix files. unix2dos also works.  
 Scripting Languages
 -------------------
 
