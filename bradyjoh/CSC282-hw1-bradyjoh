@@ -23,7 +23,8 @@ Install aspell package and aspell-en dictionary. Varies by operating system.
 For Ubuntu/Debian, sudo apt-get install aspell aspell-en
 For OS X, use Homebrew Package Installer. Then brew install aspell --lang=en
 aspell list will list the misspelled words. Then pass it a file:
-aspell list input
+aspell list < input | sort | uniq 
+(to sort alphabetically and remove copies)
 Source: http://stackoverflow.com/questions/12799741/
 run-spell-check-on-multiple-files-and-display-any-incorrect-words-in-shell-scrip
 
