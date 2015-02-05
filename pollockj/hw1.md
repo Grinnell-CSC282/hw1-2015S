@@ -27,7 +27,7 @@
 * `sed 's/\s+$//g' infile > outfile`
 
    Info from:
-   The [sed][sed] man page, the [tr] man page, and this unix [forum page].(http://www.unix.com/shell-programming-and-scripting/23602-how-remove-plank-spaces-end-lines.html):
+   The [sed][sed] man page, the [tr] man page, and this unix [forum page](http://www.unix.com/shell-programming-and-scripting/23602-how-remove-plank-spaces-end-lines.html).
 
 #####4. Make a list of all misspelled words in a text file.
 * `cat infile | aspell list`
